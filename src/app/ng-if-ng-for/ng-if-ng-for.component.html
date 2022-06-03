@@ -1,2 +1,4 @@
-<input (input)="obtemNumero($event)"/>
-<h1 *ngIf="numero > 5">Maior que 5!</h1>
+<div *ngFor="let n of arrNumeros">
+  <h1 *ngIf="n !== 'Moreira' ">{{ n }}</h1>
+
+</div>

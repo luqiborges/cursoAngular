@@ -6,13 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ng-if-ng-for.component.css'],
 })
 export class NgIfNgForComponent implements OnInit {
-  numero: number = 1;
+  arrNumeros: Array<String> = ['Julio', 'Cesar', 'Moreira'];
 
   constructor() {}
-
-  obtemNumero(event: any) {
-    this.numero = event.target.value;
-  }
 
   ngOnInit(): void {}
 }
