@@ -8,6 +8,7 @@ import { SegundoComponenteComponent } from './segundo-componente/segundo-compone
 import { NgIfNgForComponent } from './ng-if-ng-for/ng-if-ng-for.component';
 import { CrudComponent } from './components/crud/crud.component';
 import { CrudService } from './services/crud.service';
+import { LazyloadingModule } from './modules/lazyloading/lazyloading.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,12 @@ import { CrudService } from './services/crud.service';
     NgIfNgForComponent,
     CrudComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    LazyloadingModule,
+  ],
   providers: [HttpClient, CrudService],
   bootstrap: [AppComponent],
 })
